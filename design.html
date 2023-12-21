@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Templates</title>
+    <style>
+
+        .container{
+            border: 2px solid black;
+            width: 60vw;
+            margin-left: 200px;
+            display: flex;
+            height: 250vh;
+        }
+        
+        .main-left{
+            background-color: cadetblue;
+            color: white;
+            height: auto;
+            width: 20vw;
+            text-align: center;
+            display: inline-block;
+            
+        }
+
+        .main-right{
+            display: inline-block;
+            align-content: flex-start;
+            margin-left: 100px;
+        }
+
+        img{
+            height: 30vh;
+            margin-top: 20px;
+            border-radius: 100%;
+            width: 15vw;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-left">
+            <img src="profile.jpg" alt="">
+            <h2 style="text-decoration: underline;">About Me</h2><br>
+            <span id="text1"></span>
+             
+
+            <h2 style="text-decoration: underline;">Contact</h2><br>
+            <span id="text2"></span>
+            <span id="text3"></span><br>
+            <span id="text4"></span><br>
+
+            <h2 style="text-decoration: underline;">Skills</h2><br>
+            <span id="text5"></span><br>
+            <span id="text6"></span><br>
+            <span id="text7"></span><br>
+            <span id="text8"></span><br>
+            <span id="text9"></span><br>
+
+        </div>
+
+        <div class="main-right">
+
+            <h1 style="text-decoration: underline; line-height: 0;">AJITH NEELAKANDAN</h1>
+            <p>FULL STACK DEVELOPER</p>
+
+            <h3 style="text-decoration: underline;">Career Objective</h3><br>
+            <span id="text13"></span>
+
+
+            <h3 style="text-decoration: underline;">Experience</h3><br>
+            <span id="text10"></span>
+            
+    
+            <h3 style="text-decoration: underline;">Education</h3><br>
+            <span id="text11"></span>
+            
+    
+            <h3 style="text-decoration: underline;">Reference</h3><br>
+            <span id="text12"></span>
+
+            <h3 style="text-decoration: underline;">Expertise</h3><br>
+            <span id="text14"></span>
+    
+        </div>      
+    
+        
+    </div>
+
+    <script>
+
+const urlParams = new URLSearchParams(window.location.search);
+    document.getElementById("text1").textContent=urlParams.get("inputValue1");
+    document.getElementById("text2").textContent=urlParams.get("inputValue2");
+    document.getElementById("text3").textContent=urlParams.get("inputValue3");
+    document.getElementById("text4").textContent=urlParams.get("inputValue4");
+    document.getElementById("text5").textContent=urlParams.get("inputValue5");
+    document.getElementById("text6").textContent=urlParams.get("inputValue6");
+    document.getElementById("text7").textContent=urlParams.get("inputValue7");
+    document.getElementById("text8").textContent=urlParams.get("inputValue8");
+    document.getElementById("text9").textContent=urlParams.get("inputValue9");
+    document.getElementById("text10").textContent=urlParams.get("inputValue10");
+    document.getElementById("text11").textContent=urlParams.get("inputValue11");
+    document.getElementById("text12").textContent=urlParams.get("inputValue12");
+    document.getElementById("text13").textContent=urlParams.get("inputValue13");
+    document.getElementById("text14").textContent=urlParams.get("inputValue14");
+
+    </script>
+
+</body>
+</html>
