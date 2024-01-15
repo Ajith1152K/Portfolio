@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c79887e8e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="project.html">My Work</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+               </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav><br><br>
+
+            <img src="background image.jpg" class="image">
+        </div><br><br>
+
+        <div class="about">
+
+            <div class="about-col-1">
+                <img src="user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1>About Myself</h1><br>
+                <p>Hi,hello I'm Ajith Neelakandan I'm looking forward to working with you.I am hardworking very much honest and looking for a really good company in order to ensure my own safety and also grow with the company including my own growth and work for the benefits of my own and also for the company.</p>
+
+                <div class="tab-titles">
+                    <div class="tab-links">
+                        <a href="#" class="tab-links active-links" onclick="opentab('skills')">Skills</a>
+                        <a href="#" class="tab-links" onclick="opentab('experience')">Experience</a>
+                        <a href="#" class="tab-links" onclick="opentab('education')">Education</a>
+                    </div>
+        
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span> <br><br>Designing web/app interfaces</li>
+                            <li><span>App development</span> <br><br>Building android/ios apps</li>
+                        </ul>
+                    </div>
+        
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-2024</span> <br><br>Designing web/app interfaces</li>
+                            <li><span>2024-2025</span> <br><br>Building android/ios apps</li>
+                        </ul>
+                    </div>
+        
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2024</span> <br><br>Internship at Zion</li>
+                            <li><span>2021-2023</span> <br><br>BCA at Snes college kunnamanagalam</li>
+                        </ul>
+                    </div><br><br>
+        
+            </div>
+        </div><br><br>   
+        </div>
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, corrupti?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, corrupti?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <h2>App Development</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, corrupti?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact ME</h1>
+                        <p>ajithpn81@gmail.com</p>
+                        <p>9526757482</p>
+                    </div>
+                    
+                    <div class="contact-right">
+                        <form>
+                            <textarea name="" placeholder="Your Name" required></textarea>
+                           <textarea name="" placeholder="Your Email" required></textarea> 
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0px";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-250px";
+        }
+
+
+    </script>
+
+
+</body>
+</html>

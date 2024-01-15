@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <style>
+
+        
+
+        .main{
+            background-color: rgb(50, 50, 50);
+            height: 80vh;
+            width: 40vw;
+            margin-left: 400px;
+            margin-top: 35px;
+            border: 2px solid black;
+        }
+
+        .sub{
+           margin-left: 30px;
+           margin-top: 30px;
+        }
+
+        .sub input{
+            border-radius: 10px;
+            font-size: larger;
+            text-align: end;
+            height: 10vh;
+            width: 35vw;
+        }
+
+        .num1 input{
+            width: 7vw;
+            height: 8vh;
+            margin-top: 20px;
+            margin-left: 30px;
+            border-radius: 10px;
+            font-weight: 800;
+        }
+
+        .num2 input{
+            width: 7vw;
+            height: 8vh;
+            margin-top: 20px;
+            margin-left: 30px;
+            border-radius: 10px;
+            font-weight: 800;
+        }
+
+        .num3 input{
+            width: 7vw;
+            height: 8vh;
+            margin-top: 20px;
+            margin-left: 30px;
+            border-radius: 10px;
+            font-weight: 800;
+        }
+
+        .num4 input{
+            width: 7vw;
+            height: 8vh;
+            margin-top: 20px;
+            margin-left: 30px;
+            border-radius: 10px;
+            font-weight: 800;
+        }
+
+        .num5 input{
+            width: 7vw;
+            height: 8vh;
+            margin-top: 20px;
+            margin-left: 30px;
+            border-radius: 10px;
+            font-weight: 800;
+        }
+
+        @media only screen and (max-width: 600px){
+            .container .main{
+                width: 88vw;
+                height: 56vh;
+                margin-left: -0px;
+                margin-left: 10px;
+            }
+
+            .sub input{
+                width: 67vw;
+                
+            }
+
+            .num1 input{
+                display: inline;
+                width: 11vw;
+                height: 5vh;
+            }
+
+            .num2 input{
+                display: inline; 
+                width: 11vw;
+                height: 5vh;
+            }
+
+            .num3 input{
+                display: inline;
+                width: 11vw;
+                height: 5vh;
+            }
+
+            .num4 input{
+                display: inline;
+                width: 11vw;
+                height: 5vh;
+            }
+            
+            .num5 input{
+                display: inline;
+                width: 11vw;
+                height: 5vh;
+            }
+
+        }
+
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="main">
+            <div class="sub">
+                <input type="text" id="txt1">
+            </div>
+                <div class="num1">
+                     <input type="button" value="AC" onclick="txt1.value = '' ">
+                     <input type="button" value="DEL" onclick="txt1.value = txt1.value.toString().slice(0,-1) ">
+                     <input type="button" value="." onclick="txt1.value += '.' ">
+                     <input type="button" value="/" onclick="txt1.value += '/' "><br>
+              </div>  
+
+              <div class="num2">
+                <input type="button" value="7" onclick="txt1.value += '7' ">
+                <input type="button" value="8" onclick="txt1.value += '8' ">
+                <input type="button" value="9" onclick="txt1.value += '9' ">
+                <input type="button" value="*" onclick="txt1.value += '*' ">
+              </div>
+
+              <div class="num3">
+                <input type="button" value="4" onclick="txt1.value += '4' ">
+                <input type="button" value="5" onclick="txt1.value += '5' ">
+                <input type="button" value="6" onclick="txt1.value += '6' ">
+                <input type="button" value="-" onclick="txt1.value += '-' ">
+              </div>
+
+              <div class="num4">
+                <input type="button" value="1" onclick="txt1.value += '1' ">
+                <input type="button" value="2" onclick="txt1.value += '2' ">
+                <input type="button" value="3" onclick="txt1.value += '3' ">
+                <input type="button" value="+" onclick="txt1.value += '+' ">
+              </div>
+
+              <div class="num5">
+                <input type="button" value="00" onclick="txt1.value += '00' ">
+                <input type="button" value="0" onclick="txt1.value += '0' ">
+                <input type="button" value="=" style="width: 16.5vw;" onclick="txt1.value = eval(txt1.value)">
+              </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+  
