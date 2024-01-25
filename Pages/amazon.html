@@ -1,209 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Amazon Sign In</title>
+    <link rel="shotcut icon" type="image/jpg" href="../Logos/Favicon amazon.jpg">
     <style>
-        body{
-            background-color: black;
+        .main {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+           }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            margin: 10px;
+            font-size: small;
         }
 
-        h1{
-            color: #ff004f;
+        img{
+            height: 13vh;
+           
+        }
+
+        .sub {
+            width: 296px;
+            height: 290px;
+            padding: 20px 26px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 30px auto 25px auto;
+            
+        
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 28px;
+        }
+
+        label {
+            font-size: 13px;
+            padding-left: 2px;
+            padding-bottom: 2px;
+            font-weight: 700;
+        }
+
+        input {
+            width: 272px;
+            height: 25px;
+            padding: 3px 7px;
+            background-color: #fff;
+            border: 1px solid grey;
+            border-radius: 3px;
+        }
+
+        input:focus{
+            outline: 2px solid rgb(0, 204, 255);
+            /* box-shadow: 10px solid rgb(0, 204, 255); */
+        }
+
+        button {
+            width: 288px;
+            height: 31px;
+            margin-top: 15px;
+            background-color: #f0c14b;
+            border: 1px solid grey;
+            border-radius: 8px;
+            padding: 10px;
+            /* text-align: center; */
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        .summary p{
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .new p{
+            line-height: 1;
+            font-size: 12px;
+            color: grey;
+            font-weight: 400;
+            position: relative;
+            display: inline-block;
+            background-color: white;
+            padding: 0 8px 0 7px;
+            /* content: ""; */
+            top: 5px;
+            width: 120px;
+            border-top: 1px solid white;
+            /* margin-left: 670px; */
+        }
+
+        .new, .btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn button {
+            width: 348px;
+            height: 31px;
+            margin: 15px auto;
+            background-color: white;
+            border: 1px solid grey;
+            border-radius: 3px;
+            box-shadow: 1px 1px 2px gray;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            width: 250px;
+            margin: 25px auto 15px auto;
+        }
+
+        .footer a{
+            font-size: 12px;
+        }
+
+        footer::before{
+            content: "";
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin: auto;
+            height: 44px;
+            margin-top: -35px;
+            border-top: 1px solid transparent;
+            box-shadow: 0 10px 15px -20px grey;
+        }
+
+        footer p {
+            font-size: 11px;
+            color: grey;
             text-align: center;
-            text-decoration: underline;
-        }
-
-        .card-img-top1{
-          height: 25vh;
-          width: 75%;
-          margin-left: 50px;
-        }
-
-        .card-img-top2{
-          height: 25vh; 
-          width: 75%; 
-          margin-left: 50px;
-        }
-
-        .card-img-top3{
-          height: 25vh; 
-          width: 75%; 
-          margin-left: 50px;
-        }
-
-        .card-img-top4{
-          height: 25vh; 
-          width: 75%; 
-          margin-left: 50px;
-        }
-
-        .card-img-top5{
-          height: 25vh; 
-          width: 75%; 
-          margin-left: 50px;
-        }
-
-        .card-img-top6{
-          height: 25vh; 
-          width: 75%; 
-          margin-left: 50px;
         }
 
         @media only screen and (max-width: 600px){
-
-          .row{
-            display: block;
-            display: inline-block;
-          }
-
-          .card{
-            width: 45vw;
-            height: 30vh;
-            margin-left: 20px;
-            display: flex;
-          }
-
-          .card-img-top1{
-            height: 15vh;
-            width: 20vw;
-            margin-left: -0px;
-            margin-left: 45px;
-            display: flex;
-          }
-
-          .card-img-top2{
-            height: 15vh;
-            width: 28vw;
-            margin-left: -0px;
-            margin-left: 30px;
-            display: flex;
-          }
-
-          .card-img-top3{
-            height: 15vh;
-            width: 29vw;
-            margin-left: -0px;
-            margin-left: 30px;
-            display: flex;
-          }
-
-          .card-img-top4{
-            height: 18vh;
-            width: 35vw;
-            margin-left: -0px;
-            margin-left: 15px;
-            display: flex;
-          }
-
-          .card-img-top5{
-            height: 15vh;
-            width: 29vw;
-            margin-left: -0px;
-            margin-left: 35px;
-            display: flex;
-          }
-
-          .card-img-top6{
-            height: 13.7vh;
-            width: 20vw;
-            margin-top: 10px;
-            display: flex;
-          }
-
-          .row .col2{
-            margin-left: 220px;
-            margin-top: -250px;
-            display: flex;
-            align-content: center;
-          }
-
-          .row .col4{
-            margin-left: 220px;
-            margin-top: -253px;
-            display: flex;
-            align-content: center;
-          }
-
-          .row .col6{
-            margin-left: 220px;
-            margin-top: -252px;
-            display: flex;
-            align-content: center;
-          }
+            .sub{
+                margin-top: 45px;
+                width: 280px;
+                height: 280px;
+                align-content: center;
+            }
         }
-
-      
-
     </style>
 </head>
+
 <body>
+    <div class="main">
 
-    <h1>MY PROJECTS</h1>
+        <div class="logo">
+            <img src="../Logos/Amazon-logo.png">.in
+        </div>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col1">
-          <div class="card">
-            <img src="../Logos/Amazon-logo.png" class="card-img-top1" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Amazon Login Page</h5>
-              <a href="../Pages/amazon.html" class="card-link">View project</a>
-            </div>
-          </div>
+        <div class="sub">
+            <h1>Sign in</h1>
+            <label for="">Email or mobile phone number</label>
+            <input type="text">
+            <button type="submit">Continue</button>
+            <p>By continuing, you agree to Amazon's <a href="#"> Conditions of Use </a>and <a href="#">Privacy
+                    Notice.</a></p>
+            <a href="#" class="summary">
+                <details>
+                    <summary>Need help?</summary>
+                    <p>Forgot Password <br>Other issues with Sign-In</p>
+                </details>
+            </a>
+        </div>
+
+        <div class="new">
+            <p>New to Amazon?</p>
+        </div>
+
+        <div class="btn">
+            <button type="submit">Create your Amazon Account</button>
         </div>
         
-        <div class="col2">
-          <div class="card">
-            <img src="../Logos/Facebook.jpg" class="card-img-top2" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Facebook Login Page</h5>
-              <a href="/Pages/Facebooklogin.html" class="card-link">View project</a>
-            </div>
-          </div>
+        <footer>
+        <div class="footer">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Help</a>   
+             
         </div>
+        <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p></footer>
+    </div>
 
-        <div class="col3">
-          <div class="card">
-            <img src="../Logos/Instagram.jpg" class="card-img-top3" alt="..." style="">
-            <div class="card-body">
-              <h5 class="card-title">Instagram Login Page</h5>
-              <a href="/Pages/instagram.html" class="card-link">View project</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col4">
-          <div class="card">
-            <img src="../Images/calculator.jpg" class="card-img-top4" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Calculator</h5>
-              <a href="/Pages/calculator.html" class="card-link">View project</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col5">
-          <div class="card">
-            <img src="../Images/Restaurant/Restaurant.jpg" class="card-img-top5" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Restaurant</h5>
-              <a href="/Pages/bootstrap3.html" class="card-link">View project</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col6">
-          <div class="card">
-            <img src="../Images/Resume.png" class="card-img-top6" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Resume</h5>
-              <a href="/Pages/resume.html" class="card-link">View project</a>
-            </div>
-          </div>
-        </div>  
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
+
 </html>
